@@ -1,0 +1,59 @@
+1. Les commandes essentielles (à maîtriser absolument)
+📦 Base (le cœur de Git)
+git init          # créer un repo
+git clone URL     # copier un repo
+git status        # voir l’état
+git add .         # ajouter les fichiers
+git commit -m ""  # sauvegarder
+git log           # voir l’historique
+🌿 Branches
+git branch                # voir les branches
+git branch nom            # créer une branche
+git checkout nom          # changer de branche
+git checkout -b nom       # créer + changer
+git merge nom             # fusionner
+☁️ GitHub / remote
+git remote add origin URL
+git remote -v
+git push -u origin main
+git pull
+git fetch
+
+👉 fonctionne avec GitHub ou GitLab
+
+⚙️ 2. Commandes intermédiaires (très utiles)
+🔄 Modifier des commits
+git commit --amend
+
+👉 modifier le dernier commit
+
+⏪ Revenir en arrière
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+git checkout fichier
+🧩 Stash (mettre de côté)
+git stash
+git stash pop
+🔍 Comparer
+git diff
+git diff --staged
+🔥 3. Commandes avancées (niveau pro)
+⚡ Rebase
+git rebase main
+git rebase -i HEAD~3
+
+👉 réécrire l’historique proprement
+
+🧼 Nettoyage
+git clean -f
+🔗 Tags
+git tag v1.0
+git push origin v1.0
+📜 Logs avancés
+git log --oneline --graph --all
+🧪 4. Commandes utiles mais moins fréquentes
+git rm fichier
+git mv ancien nouveau
+git show
+git blame fichier
+git reflog
