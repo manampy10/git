@@ -28,6 +28,9 @@ git commit --amend
 👉 modifier le dernier commit
 
 ⏪ Revenir en arrière
+--soft	garde les fichiers en staging
+--mixed	garde les fichiers mais enlève staging
+--hard	supprime tout ⚠️
 git reset --soft HEAD~1
 git reset --hard HEAD~1
 git checkout fichier
